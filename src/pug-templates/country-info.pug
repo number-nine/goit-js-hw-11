@@ -1,0 +1,15 @@
+div.country-info__header
+    img.country-info__flag(src= locals.flag)
+    h1= locals.name
+ul.country-info__stats-list
+    li.country-info__stat 
+        span.country-info__stat-name Capital: 
+        |   #{locals.capital.join(", ")}
+    li.country-info__stat  
+        span.country-info__stat-name Population: 
+        |   #{locals.population}
+    li.country-info__stat  
+        span.country-info__stat-name Languages:
+        |   #{Object.values(locals.languages).join(', ')}
+
+
