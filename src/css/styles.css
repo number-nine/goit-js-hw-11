@@ -1,3 +1,5 @@
+@import '../sass/photo-card.scss';
+
 * {
   box-sizing: border-box;
 }
@@ -10,53 +12,4 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-}
-
-#search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
-}
-
-.country-list, .country-info__stats-list {
-  padding-left: 20px;
-  list-style: none;
-}
-
-.country-list__element{
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-
-  margin-bottom: 20px;
-
-  font-size: 24px;
-}
-
-.country-list__flag{
-  width: 60px;
-}
-
-.country-info {
-  padding-left: 20px;
-}
-.country-info__header {
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-}
-
-.country-info__flag{
-  width: 80px;
-}
-
-.country-info__stat {
-  margin-bottom: 20px;
-  
-  font-size: 20px;
-}
-
-.country-info__stat-name{
-  font-weight: 600;
 }
