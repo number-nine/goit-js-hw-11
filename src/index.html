@@ -14,12 +14,18 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button class="search-button" type="submit">Search</button>
+      <button class="search-button" type="submit">
+        <span class="fa fa-spinner fa-spin search-button__icon--hidden"></span
+        >Search
+      </button>
     </form>
     <div class="gallery">
       <!-- Картки зображень -->
     </div>
-    <button type="button" class="load-more search-button">Load more</button>
+    <button type="button" class="load-more search-button search-button--hidden">
+      <span class="fa fa-spinner fa-spin search-button__icon--hidden"></span
+      >Load more
+    </button>
     <script src="index.js" type="module"></script>
   </body>
 </html>

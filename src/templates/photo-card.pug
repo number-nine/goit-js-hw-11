@@ -1,29 +1,12 @@
-//- <div class="photo-card">
-//-   <img src="" alt="" loading="lazy" />
-//-   <div class="info">
-//-     <p class="info-item">
-//-       <b>Likes</b>
-//-     </p>
-//-     <p class="info-item">
-//-       <b>Views</b>
-//-     </p>
-//-     <p class="info-item">
-//-       <b>Comments</b>
-//-     </p>
-//-     <p class="info-item">
-//-       <b>Downloads</b>
-//-     </p>
-//-   </div>
-//- </div>
 each picture in locals
     div.photo-card
-        img(src= picture.previewURL alt= picture.tags loading="lazy")
+        img(src= picture.webformatURL alt= picture.tags loading="lazy")
         .info 
             p.info-item
-                b Likes 
+                b Likes #{picture.likes}
             p.info-item
-                b Views
+                b Views #{picture.views}
             p.info-item
-                b Comments
+                b Comments #{picture.comments}
             p.info-item
-                b Downloads
+                b Downloads #{picture.downloads}

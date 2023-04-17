@@ -1,4 +1,7 @@
 import axios from 'axios';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
+import 'notiflix/dist/notiflix-3.2.6.min.css';
 
 export default class PicturesApiController {
   constructor() {
@@ -9,7 +12,7 @@ export default class PicturesApiController {
         image_type: 'photo',
         orientation: 'horizontal',
         safesearch: true,
-        per_page: 200,
+        per_page: 500,
         page: 1,
         q: '',
       },
@@ -23,10 +26,9 @@ export default class PicturesApiController {
       const { data } = await this.axiosInstance.get();
       this.incrementPageCounter();
       this.incrementHitsCounter(data.hits.length);
-      console.log(this.returnedHits);
       return data;
     } catch (error) {
-      console.log(error);
+      Notify.failure(error.message);
     }
   }
 
