@@ -1,0 +1,42 @@
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+
+  padding: 6px 16px;
+  margin: 0;
+
+  color: white;
+  background-color: #4d5ae5;
+
+  border: none;
+  font-size: 18px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #404BBF;
+  }
+
+
+  &__icon {
+    width: 14px;
+    fill: currentColor;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

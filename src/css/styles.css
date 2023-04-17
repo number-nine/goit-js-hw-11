@@ -1,4 +1,5 @@
 @import '../sass/photo-card.scss';
+@import '../sass/common.scss';
 
 * {
   box-sizing: border-box;
