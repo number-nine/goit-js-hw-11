@@ -1,12 +1,12 @@
 each picture in locals
-    div.photo-card
-        img(src= picture.webformatURL alt= picture.tags loading="lazy")
-        .info 
-            p.info-item
+    div.photo-card.gallery__item(data-img= picture.largeImageURL)
+        img.photo-card__image(src= picture.webformatURL alt= picture.tags loading="lazy")
+        .info.photo-card__caption 
+            p.info-item.photo-card__info
                 b Likes #{picture.likes}
-            p.info-item
+            p.info-item.photo-card__info
                 b Views #{picture.views}
-            p.info-item
+            p.info-item.photo-card__info
                 b Comments #{picture.comments}
-            p.info-item
+            p.info-item.photo-card__info
                 b Downloads #{picture.downloads}

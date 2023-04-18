@@ -1,3 +1,24 @@
-.some-class{
-    font-size: 50px;
+.photo-card {
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    overflow: hidden;
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 240px;
+  }
+
+  &__caption {
+    display: flex;
+    column-gap: 15px;
+  }
+
+  &__info {
+    text-align: center;
+    padding: 0 6px;
+  }
+
+
 }

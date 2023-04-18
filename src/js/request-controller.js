@@ -12,7 +12,7 @@ export default class PicturesApiController {
         image_type: 'photo',
         orientation: 'horizontal',
         safesearch: true,
-        per_page: 500,
+        per_page: 40,
         page: 1,
         q: '',
       },
