@@ -6,7 +6,7 @@ import 'notiflix/dist/notiflix-3.2.6.min.css';
 export default class PicturesApiController {
   constructor() {
     this.defaultRequestConfig = {
-      baseURL: 'https://pixabay.com/api',
+      baseURL: 'https://pixabay.com/api/',
       params: {
         key: '35449391-877499d7e02cc8d7dbb493e51',
         image_type: 'photo',
