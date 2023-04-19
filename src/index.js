@@ -61,7 +61,11 @@ function onLoadMore() {
   picturesApiController
     .getPictures()
     .then(({ hits, totalHits }) => {
-      interfaceController.renderPicturesMarkup(hits, totalHits);
+      interfaceController.renderPicturesMarkup(
+        hits,
+        totalHits,
+        picturesApiController.hits
+      );
     })
     .catch(error => {
       Notify.failure(error.message);

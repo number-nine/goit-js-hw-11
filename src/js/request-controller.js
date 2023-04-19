@@ -12,12 +12,12 @@ export default class PicturesApiController {
         image_type: 'photo',
         orientation: 'horizontal',
         safesearch: true,
-        per_page: 40,
+        per_page: 200,
         page: 1,
         q: '',
       },
     };
-    this.returnedHits = 0;
+    this.hits = 0;
     this.axiosInstance = axios.create(this.defaultRequestConfig);
   }
 
